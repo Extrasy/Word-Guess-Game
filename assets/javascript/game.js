@@ -1,30 +1,31 @@
 var wordOptions =           
     [
-        "CSHARP",
-        "CPLUSPLUS",
-        "RUBYONRAILS",
-        "PYTHON",
-        "JAVASCRIPT",
-        "ANSIC",
-        "COBOL",
-        "FORTRAN",
-        "VISUALBASIC",
-        "COMPILER",
-        "ALGORITHM",
-        "QBASIC",
-        "ASPNET",
-        "FRAMEWORK",
+        "CAMARO",
+        "MUSTANG",
+        "MITSUBISHI",
+        "HONDA",
+        "TOYOTA",
+        "MERCEDES",
+        "MIATA",
+        "FORD",
+        "CORVETTE",
+        "CHRYSLER",
+        "JEEP",
+        "ACURA",
+        "CHEVROLET",
+        "SUBARU",
+        "VOLKSWAGEN",
+        "CHALLENGER",
+        "NOVA",
     ];
 
 const maxTries = 10;            
-
 var guessedLetters = [];        
 var currentWordIndex;          
 var guessingWord = [];          
 var remainingGuesses = 0;       
 var hasFinished = false;             
 var wins = 0;                   
-
 //reset vars
 function resetGame() {
     remainingGuesses = maxTries;
@@ -47,7 +48,6 @@ function resetGame() {
     // Show display
     updateDisplay();
 };
-
 //  Update the HTML Page
 function updateDisplay() {
 
@@ -63,9 +63,6 @@ function updateDisplay() {
     document.getElementById("remainingGuesses").innerText = remainingGuesses;
     document.getElementById("guessedLetters").innerText = guessedLetters;
 };
-
-
-
 function evaluateGuess(letter) {
     
     var positions = [];
@@ -91,8 +88,6 @@ function checkWin() {
         hasFinished = true;
     }
 };
-
-
 // Checks for a loss
 function checkLoss()
 {
@@ -102,7 +97,6 @@ function checkLoss()
         hasFinished = true;
     }
 }
-
 function makeGuess(letter) {
     if (remainingGuesses > 0) {
         if (guessedLetters.indexOf(letter) === -1) {
@@ -112,7 +106,6 @@ function makeGuess(letter) {
     }
     
 };
-
 document.onkeydown = function(event) {
     // reset the game
     if(hasFinished) {
