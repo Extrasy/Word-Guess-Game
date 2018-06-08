@@ -17,6 +17,9 @@ var wordOptions =
         "VOLKSWAGEN",
         "CHALLENGER",
         "NOVA",
+        "LAMBORGHINI",
+        "FERRARI",
+        "CADILLAC",
     ];
 
 const maxTries = 10;            
