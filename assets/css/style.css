@@ -10,7 +10,7 @@ body {
     text-align: center;
     
 }
-h1,h2,h3,
+h1,h3,
 h4,h5,h6 {
     padding: 5px;
     background-color: rgba(25, 26, 27, 0.6);
@@ -34,4 +34,10 @@ h4,h5,h6 {
     margin-top: 20px;
     min-height: 500px;
     background-color: rgba(255, 255, 255, .3);
+}
+h2{
+    color: rgb(191, 211, 194);
+}
+h6{
+    color: rgb(255, 145, 0);
 }
